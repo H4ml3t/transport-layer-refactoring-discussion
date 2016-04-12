@@ -40,7 +40,7 @@ Each line is a JSON containing:
 # My experience
 
 - Consumer only
-- Daily running jobs to convert JSON in Parquet/Avro/CSV
+- Daily running jobs to convert JSON in Parquet or other formats
 
 !
 
@@ -50,7 +50,7 @@ Each line is a JSON containing:
 
 2) High arrival latency
 
-Solution => daily deleting current Parquet/Avro month folder (if size allows it) and re-converting it again
+Solution => to delete current converted month folder and to re-convert it again (daily)
 
 !
 
@@ -74,5 +74,5 @@ Solution => parsing twice
 
 - Textual output file formats are OK but more prone to generate errors
 - Force users to define a schema for their body content
-- Avoid using string for numeric values
+- Avoid using strings for numeric values
 - Leave duplicates detection to consumers
