@@ -20,9 +20,13 @@ Flume HDFS output data formats and aggregation policies
 For each dataset:
 
 ```$ hadoop fs -ls /project/itmon/archive/lemon/vocmsweb```
+
 ```Found 3 items```
+
 ```drwxr-xr-x   - itmonops ts          0 2016-04-03 08:05 /project/itmon/archive/lemon/vocmsweb/2016-03```
+
 ```drwxr-xr-x   - itmonops ts          0 2016-04-12 05:45 /project/itmon/archive/lemon/vocmsweb/2016-04```
+
 ```drwxr-xr-x   - itmonops ts          0 2016-04-12 15:48 /project/itmon/archive/lemon/vocmsweb/2016-04.tmp```
 
 !
