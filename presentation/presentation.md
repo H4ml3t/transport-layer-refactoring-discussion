@@ -33,23 +33,15 @@ One month example
 
 Each line is a JSON containing:
 
-```{ ```
-
-  ```body: "",```
-
-  ```host: "",```
-
-  ```timestamp: "",```
-
-  ```toplevel_hostgroup: "",```
-
-  ```producer: "",```
-
-  ```metric: "",```
-
-  ```value: ""```
-
-```} ```
+{
+  body: "",
+  host: "",
+  timestamp: "",
+  toplevel_hostgroup: "",
+  producer: "",
+  metric: "",
+  value: ""
+} 
 
 
 !
