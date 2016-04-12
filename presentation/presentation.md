@@ -33,16 +33,7 @@ One month example
 
 Each line is a JSON containing:
 
-{
-  body: "",
-  host: "",
-  timestamp: "",
-  toplevel_hostgroup: "",
-  producer: "",
-  metric: "",
-  value: ""
-} 
-
+![flume example](flume_json.png "flume json")
 
 !
 
@@ -55,11 +46,28 @@ Each line is a JSON containing:
 
 ## Issues
 
-1) Not incremental updates
-2) 
+1) No incremental updates
+2) High arrival latency
+
+Solution => daily deleting current Parquet/Avro month folder (if size allows it) and re-converting it again
 
 !
+
+## Issues
+
+3) Presence of datasets not compliant with Flume JSON schema
+
+Solution => ad-hoc implementations for each of them
+
+!
+
+## Issues
+
+4) Encoded JSON within `body` value
+
+Solution => parsing twice
 
 ## Possible improvements
 
 - Avoid to write encoded JSONs
+- 
