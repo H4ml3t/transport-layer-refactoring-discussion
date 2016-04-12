@@ -1,11 +1,15 @@
-Discussion
-==================
-Flume output data formats and aggregation policies
+AWG meeting
+===========
+13 April 2016
+
+## Discussion
+Flume HDFS output data formats and aggregation policies
 
 !
 
-## Description
-
-(Scope: Hadoop clusters - HDFS)
+## Architecture
+* Flume `agents` emitting log lines (JSON)
+* Flume `sinks` collecting data and writing in *tmp* folders
+* Daily (monthly) aggregations to delete duplicates and to consolidate 1GB files
 
 !
