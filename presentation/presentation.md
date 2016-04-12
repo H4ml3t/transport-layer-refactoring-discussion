@@ -19,18 +19,11 @@ Flume HDFS output data formats and aggregation policies
 
 For each dataset:
 
-![hls](hls_01.png)
+![hadoop fs ls](hls_01.png "flume output example months")
 
 !
 
-```
-hadoop fs -ls /project/itmon/archive/lemon/vocmsweb/2016-04
-Found 4 items
--rw-r--r--   3 itmonops ts          0 2016-04-12 05:45 /project/itmon/archive/lemon/vocmsweb/2016-04/_SUCCESS
--rw-r--r--   3 itmonops ts  817035112 2016-04-12 05:44 /project/itmon/archive/lemon/vocmsweb/2016-04/part-r-00000
--rw-r--r--   3 itmonops ts  816982481 2016-04-12 05:45 /project/itmon/archive/lemon/vocmsweb/2016-04/part-r-00001
--rw-r--r--   3 itmonops ts  817530853 2016-04-12 05:44 /project/itmon/archive/lemon/vocmsweb/2016-04/part-r-00002
-```
+![hadoop fs ls](hls_02.png "current month")
 
 !
 
