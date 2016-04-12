@@ -47,6 +47,7 @@ Each line is a JSON containing:
 ## Issues
 
 1) No incremental updates
+
 2) High arrival latency
 
 Solution => daily deleting current Parquet/Avro month folder (if size allows it) and re-converting it again
@@ -67,7 +68,11 @@ Solution => ad-hoc implementations for each of them
 
 Solution => parsing twice
 
+!
+
 ## Possible improvements
 
-- Avoid to write encoded JSONs
-- 
+- Textual output file formats are OK but more prone to generate errors
+- Force users to define a schema for their body content
+- Avoid using string for numeric values
+- Leave duplicates detection to consumers
