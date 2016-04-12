@@ -10,7 +10,7 @@ Flume HDFS output data formats and aggregation policies
 ## Architecture
 * Flume `agents` emitting log lines (JSON)
 * Flume `sinks` collecting data and writing in *tmp* folders
-* Daily (monthly) aggregations to delete duplicates and to consolidate logs in 1GB files
+* Daily (monthly) aggregations to delete duplicates and to consolidate logs in ~1GB files
 * Monthly output folders
 
 !
@@ -33,17 +33,24 @@ One month example
 
 Each line is a JSON containing:
 
-```json
-{
-  body: "",
-  host: "",
-  timestamp: "",
-  toplevel_hostgroup: "",
-  producer: ""
-  metric: "",
-  value: ""
-}
-```
+```{ ```
+
+  ```body: "",```
+
+  ```host: "",```
+
+  ```timestamp: "",```
+
+  ```toplevel_hostgroup: "",```
+
+  ```producer: "",```
+
+  ```metric: "",```
+
+  ```value: ""```
+
+```} ```
+
 
 !
 
