@@ -66,7 +66,9 @@ Solution => to delete current converted month folder and to re-convert it again 
 3) Presence of datasets not compliant with Flume JSON schema
 
 { body: { A , B , C }, ts: ... }
+
 { body: { B , C }, ts: A, ... }
+
 { A, B, C }
 
 Solution => ad-hoc implementations for each of them
