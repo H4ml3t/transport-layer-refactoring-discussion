@@ -33,7 +33,14 @@ One month example
 
 Each line is a JSON containing:
 
-![flume example](flume_json.png "flume json")
+{<br>
+   "body":"",<br>
+   "timestamp":"",<br>
+   "host":"",<br>
+   "toplevel_hostgroup":"",<br>
+   "producer":"",<br>
+   "metric":""<br>
+}
 
 !
 
