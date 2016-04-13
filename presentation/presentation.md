@@ -55,7 +55,7 @@ Each line is a JSON containing:
 
 1) No incremental updates
 
-2) High arrival latency
+2) Variable arrival latency (days)
 
 Solution => to delete current converted month folder and to re-convert it again (daily)
 
@@ -64,6 +64,10 @@ Solution => to delete current converted month folder and to re-convert it again 
 ## Issues
 
 3) Presence of datasets not compliant with Flume JSON schema
+
+{ body: { A , B , C }, ts: ... }
+{ body: { B , C }, ts: A, ... }
+{ A, B, C }
 
 Solution => ad-hoc implementations for each of them
 
@@ -79,7 +83,7 @@ Solution => parsing twice
 
 ## Possible improvements
 
-- Textual output file formats are OK but more prone to generate errors
-- Force users to define a schema for their body content
+- Textual output file formats are OK but with more contraints
+- Force users to define a schema for their `body` content
 - Avoid using strings for numeric values
 - Leave duplicates detection to consumers
